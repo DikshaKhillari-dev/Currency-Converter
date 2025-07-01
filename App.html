@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="App.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+
+      <div class="converter">
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <select id="from-currency">
+          <!-- Options will be populated dynamically -->
+        </select>
+        <span>to</span>
+        <select id="to-currency">
+          <!-- Options will be populated dynamically -->
+        </select>
+        <button id="convert-btn">Convert</button>
+      </div>
+
+      <div id="result">
+        <p>Converted Amount: <span id="converted-amount">0</span></p>
+      </div>
+    </div>
+
+    <script src="App.js"></script>
+  </body>
+</html>
+
+<!-- https://www.exchangerate-api.com -->
+
+<!-- Project Idea: Currency Converter Web App
+Features:
+User can select two currencies (e.g., USD, EUR, INR) and enter an amount to convert.
+
+Display the converted amount based on real-time exchange rates.
+
+Use an API to fetch live exchange rates (e.g., ExchangeRate-API or any other free currency API). -->
